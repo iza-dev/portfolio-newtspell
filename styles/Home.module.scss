@@ -1,0 +1,27 @@
+/* *, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+.main {
+  display:flex;
+  flex-direction: column;
+  width: 960px;
+  background-color: violet;
+  margin: 0 auto;
+
+  .works{
+    background-color: black;
+    margin: auto;
+    
+  }
+
+
+  .footer{
+    flex-shrink: 0;
+    background-color: yellowgreen;
+  }
+}
+
+ 
