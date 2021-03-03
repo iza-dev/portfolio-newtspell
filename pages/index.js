@@ -12,7 +12,7 @@ export default function Home() {
                 <Header/> 
 
                 <section>
-                    
+                    iuiuiu
                 </section>
 
                 <Footer/>
