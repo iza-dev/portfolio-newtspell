@@ -1,59 +1,35 @@
-import { createMuiTheme } from  "@material-ui/core/styles"
-import{ GreenPastel, GrayLight, GrayDark, BlackLight } from "constants/colors"
-//style par défaut des composants
+import { createMuiTheme } from '@material-ui/core/styles'
+import { GreenPastel, GrayLight, GrayDark, BlackLight } from 'constants/colors'
+// style par défaut des composants
 export default createMuiTheme({
 
-    palette :  {
+  palette: {
 
-        primary : {
-            main : GreenPastel,
-        },
-        error : {
-            main : GrayDark
-        },
-        text : {
-            primary : BlackLight
-        },
-        background : {
-            default : GreenPastel
-        }
-
+    primary: {
+      main: GreenPastel
     },
-
-    typography : {
-
-    fontFamily: "Boowie",
-    
-    h1:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
+    error: {
+      main: GrayDark
     },
-    h2:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
+    text: {
+      primary: BlackLight
     },
-    h3:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
-    },
-    h4:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
-    },
-    h5:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
-    },
-    body:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
-    },
-
+    background: {
+      default: GrayLight
     }
+
+  },
+
+  typography: {
+
+    fontFamily: 'Arial',
+    htmlFontSize: 10,
+
+    h1: {
+      fontWeight: 100,
+      letterSpacing: '15px',
+      fontSize: '5rem'
+    }
+
+  }
 })
