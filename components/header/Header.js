@@ -5,7 +5,7 @@ export default function Header () {
   return (
     <header className={styles.header}>
       <Typography variant="h1">NewtSpell</Typography>
-      <p>Environemnt Artist · Houdini specialized</p>
+      <Typography variant="h2">Environemnt Artist · Houdini specialized</Typography>
     </header>
   )
 }

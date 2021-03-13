@@ -1,7 +1,11 @@
+import HomeIcon from './FooterIcon'
+import style from './Footer.module.css'
+
 export default function Footer () {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer className={style.footer}>
+      <HomeIcon/>
+      <p>© 2021 <strong>NewtSpell</strong> INC. ALL RIGHTS RESERVED</p>
+    </footer>
   )
 }

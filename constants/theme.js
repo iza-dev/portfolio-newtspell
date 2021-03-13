@@ -26,9 +26,16 @@ export default createMuiTheme({
     htmlFontSize: 10,
 
     h1: {
-      fontWeight: 100,
-      letterSpacing: '15px',
-      fontSize: '5rem'
+      fontWeight: 600,
+      letterSpacing: '1rem',
+      textTransform: 'uppercase',
+      fontSize: '10rem'
+    },
+    h2: {
+      fontWeight: 300,
+      letterSpacing: '.5rem',
+      textTransform: 'uppercase',
+      fontSize: '3rem'
     }
 
   }
