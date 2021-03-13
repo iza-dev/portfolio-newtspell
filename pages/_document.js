@@ -1,7 +1,7 @@
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import {ServerStyleSheet} from "styled-components"
 import {ServerStyleSheets} from "@material-ui/styles"
+import { Typography } from '@material-ui/core'
 import theme from "constants/theme"
 
 // seulement rendu côté server, donc les gestionnaires d'évènements comme onclick ne
@@ -11,32 +11,32 @@ import theme from "constants/theme"
 // défaut, vous devez créer un fichier à ./pages/_document.jsoù vous pouvez étendre la
 // classe de document.
 class CustomDocument extends Document {
-  static async getInitialProps(ctx){
-    const styledComponentSheet = new ServerStyleSheet()
-    const materialSheets = new ServerStyleSheets()
-    const originalRenderpage = ctx.renderPage 
-    try{
-      ctx.renderPage= () =>
-      originalRenderpage({
-        enhanceApp : (App) => (props) =>
-          styledComponentSheet.collectStyles(materialSheets.collect(<App {...props} />)),
-      })
-      const initialProps = await Document.getInitialProps(ctx)
+  // static async getInitialProps(ctx){
+  //   const styledComponentSheet = new ServerStyleSheet()
+  //   const materialSheets = new ServerStyleSheets()
+  //   const originalRenderpage = ctx.renderPage 
+  //   try{
+  //     ctx.renderPage= () =>
+  //     originalRenderpage({
+  //       enhanceApp : (App) => (props) =>
+  //         styledComponentSheet.collectStyles(materialSheets.collect(<App {...props} />)),
+  //     })
+  //     const initialProps = await Document.getInitialProps(ctx)
 
-      return{
-        ...initialProps,
-        styles : [
-          <React.Fragment key="styles">
-            {initialProps.styles}
-            {materialSheets.getStyleElement()}
-            {styledComponentSheet.getStyleElement()}
-          </React.Fragment>,
-        ],
-      };
-    }finally{
-        styledComponentSheet.seal()
-    }
-  }
+  //     return{
+  //       ...initialProps,
+  //       styles : [
+  //         <React.Fragment key="styles">
+  //           {initialProps.styles}
+  //           {materialSheets.getStyleElement()}
+  //           {styledComponentSheet.getStyleElement()}
+  //         </React.Fragment>,
+  //       ],
+  //     };
+  //   }finally{
+  //       styledComponentSheet.seal()
+  //   }
+  // }
 
   render () {
     return (
@@ -45,7 +45,7 @@ class CustomDocument extends Document {
           <meta name='Portfolio' content='Portfolio of NewtSpell' />
           <meta name='theme-color' content='#4285f4' />
         </Head>
-        <body>
+        <body style={{width:'auto'}}>
           <Main />
           <NextScript />
         </body>

@@ -1,5 +1,4 @@
 import styles from './Header.module.css'
-import theme from "constants/theme"
 import { Typography } from '@material-ui/core'
 
 export default function Header () {

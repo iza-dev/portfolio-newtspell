@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { ThemeProvider, responsiveFontSizes } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from 'constants/theme'
+import style from "static/style.css"
 
 // _app est rendu à la fois côté serveur et côté client (sur le serveur pendant le SSR
 // initial, côté client après hydratation et ensuite sur chaque page / route de navigation)

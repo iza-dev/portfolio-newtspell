@@ -5,17 +5,16 @@ import Work from '../components/works/Works'
 export default function Home () {
   // travailler sur les states pour lanime du début
   return (
-    <div>
-      <div />
-      <main>
+
+      <main style={{width:'85%', margin:'auto'}}>
         <Header />
 
-        <section>
+      
           <Work />
-        </section>
+
 
         <Footer />
       </main>
-    </div>
+
   )
 }
