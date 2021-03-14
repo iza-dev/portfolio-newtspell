@@ -8,7 +8,7 @@ export default function Works () {
         <div className={style.work} style={{backgroundImage: 'url(\'https://picsum.photos/id/645/800/530\')'}}></div>
         <div className={style.work} style={{backgroundImage: 'url(\'https://picsum.photos/id/689/800/530\')'}}></div>
         <div className={style.work} style={{backgroundImage: 'url(\'https://picsum.photos/id/616/800/530\')'}}></div>
-        <div className={style.work} style={{backgroundImage: 'url(\'https://picsum.photos/id/601/800/530\')'}}></div>
+        <div className={style.work} style={{backgroundImage: 'url(\'https://picsum.photos/id/606/800/530\')'}}></div>
     </section>
   )
 }

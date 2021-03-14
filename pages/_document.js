@@ -45,7 +45,7 @@ class CustomDocument extends Document {
           <meta name='Portfolio' content='Portfolio of NewtSpell' />
           <meta name='theme-color' content='#4285f4' />
         </Head>
-        <body style={{width:'auto'}}>
+        <body>
           <Main />
           <NextScript />
         </body>

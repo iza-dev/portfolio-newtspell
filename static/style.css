@@ -3,8 +3,6 @@
     src: url("/static/fonts/Simple Print.ttf");
 }
 
-
-
 @font-face {
     font-family: 'made_evolve_sansbold';
     src: url('/static/fonts/MADE-Evolve-Sans/made_evolve_sans_bold_personal_use-webfont.woff2') format('woff2'),

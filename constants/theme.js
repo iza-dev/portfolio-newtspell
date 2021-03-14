@@ -16,8 +16,28 @@ export default createMuiTheme({
     },
     background: {
       default: GrayLight
-    }
+    },
 
+  },
+  
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        html: {
+          WebkitFontSmoothing: 'auto'
+        },
+        body:{
+          textRendering: 'auto'
+        },
+        'body, html':{
+          margin: 0,
+          padding: 0,
+        },
+        '*, *::before, *::after':{
+          boxSizing: 'border-box'
+        }
+      },
+    },
   },
 
   typography: {
@@ -36,7 +56,7 @@ export default createMuiTheme({
       letterSpacing: '.5rem',
       textTransform: 'uppercase',
       fontSize: '3rem'
-    }
+    },
 
   }
 })

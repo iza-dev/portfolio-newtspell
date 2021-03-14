@@ -4,7 +4,6 @@ import Head from 'next/head'
 import { ThemeProvider, responsiveFontSizes } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from 'constants/theme'
-import style from "static/style.css"
 
 // _app est rendu à la fois côté serveur et côté client (sur le serveur pendant le SSR
 // initial, côté client après hydratation et ensuite sur chaque page / route de navigation)
@@ -27,7 +26,7 @@ export default function App (props) {
         <meta charSet='utf-8' />
         <title>NewtSpell · Portfolio </title>
         <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no' />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"/>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.13.1/css/all.css'/>
       </Head>
       <ThemeProvider theme={ResponsiveFontTheme}>
         <CssBaseline />
