@@ -6,9 +6,11 @@ import React, { useState } from 'react'
 export default function  Menu () {
   const [open, setOpen] = useState(false)
   return (
-    <div className={style.burger}>
-      <Burger open={open} setOpen={setOpen}/>
+    <div >
       <MenuToggled open={open} setOpen={setOpen}/>
+
+      <Burger open={open} setOpen={setOpen}/>
+
     </div>
   )
 }

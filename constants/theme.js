@@ -23,12 +23,6 @@ export default createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       '@global': {
-        html: {
-          WebkitFontSmoothing: 'auto'
-        },
-        body:{
-          textRendering: 'auto'
-        },
         'body, html':{
           margin: 0,
           padding: 0,
