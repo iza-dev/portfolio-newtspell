@@ -11,6 +11,7 @@ export default function Home () {
       <main style={{width:'85%', margin:'auto'}}>
         <Header />
         <Works />
+        
         <Footer />
       </main>
     </div>
