@@ -6,7 +6,7 @@ export default function AboutMe(){
     return(
         <div>
         <Menu/>
-            <p> about me </p>   
+            <p> about me  </p>   
         </div> 
     )
 }
