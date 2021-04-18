@@ -1,59 +1,56 @@
-import { createMuiTheme } from  "@material-ui/core/styles"
-import{ GreenPastel, GrayLight, GrayDark, BlackLight } from "constants/colors"
-//style par défaut des composants
+import { createMuiTheme } from '@material-ui/core/styles'
+import { GreenPastel, GrayLight, GrayDark, BlackLight } from 'constants/colors'
+// style par défaut des composants
 export default createMuiTheme({
 
-    palette :  {
+  palette: {
 
-        primary : {
-            main : GreenPastel,
+    primary: {
+      main: GreenPastel
+    },
+    error: {
+      main: GrayDark
+    },
+    text: {
+      primary: BlackLight
+    },
+    background: {
+      default: GrayLight
+    },
+
+  },
+  
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        'body, html':{
+          margin: 0,
+          padding: 0,
         },
-        error : {
-            main : GrayDark
-        },
-        text : {
-            primary : BlackLight
-        },
-        background : {
-            default : GreenPastel
+        '*, *::before, *::after':{
+          boxSizing: 'border-box'
         }
+      },
+    },
+  },
 
-    },
+  typography: {
 
-    typography : {
+    fontFamily: 'Arial',
+    htmlFontSize: 10,
 
-    fontFamily: "Boowie",
-    
-    h1:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
+    h1: {
+      fontWeight: 600,
+      letterSpacing: '1rem',
+      textTransform: 'uppercase',
+      fontSize: '10rem'
     },
-    h2:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
-    },
-    h3:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
-    },
-    h4:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
-    },
-    h5:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
-    },
-    body:{
-        fontWeight: 600,
-        letterSpacing : "-2px",
-        fontSize : "3rem",
+    h2: {
+      fontWeight: 300,
+      letterSpacing: '.5rem',
+      textTransform: 'uppercase',
+      fontSize: '3rem'
     },
 
-    }
+  }
 })
