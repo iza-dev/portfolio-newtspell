@@ -2,11 +2,11 @@ import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
 import Menu from '../components/menu/Menu'
 
-export default function Contact(){
-    return(
-        <div>
-        <Menu/>
-            <p>Contact</p>
-        </div>
-    )
+export default function Contact () {
+  return (
+    <div>
+      <Menu />
+      <p>Contact</p>
+    </div>
+  )
 }

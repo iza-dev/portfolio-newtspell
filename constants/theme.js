@@ -16,22 +16,26 @@ export default createMuiTheme({
     },
     background: {
       default: GrayLight
-    },
+    }
 
   },
-  
+
   overrides: {
     MuiCssBaseline: {
       '@global': {
-        'body, html':{
+        'body, html': {
           margin: 0,
-          padding: 0,
+          padding: 0
         },
-        '*, *::before, *::after':{
+        '*, *::before, *::after': {
           boxSizing: 'border-box'
+        },
+        main: {
+          width: '85%',
+          margin: 'auto'
         }
-      },
-    },
+      }
+    }
   },
 
   typography: {
@@ -50,7 +54,7 @@ export default createMuiTheme({
       letterSpacing: '.5rem',
       textTransform: 'uppercase',
       fontSize: '3rem'
-    },
+    }
 
   }
 })
