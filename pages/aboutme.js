@@ -10,7 +10,7 @@ export default function AboutMe () {
     <div>
       <Menu />
       <main>
-        <Header />
+        <Header page='aboutme'/>
         <Bio />
         <Timeline />
         <Footer />
