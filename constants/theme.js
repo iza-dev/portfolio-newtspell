@@ -54,6 +54,22 @@ export default createMuiTheme({
       letterSpacing: '.5rem',
       textTransform: 'uppercase',
       fontSize: '3rem'
+    },
+    h3: {
+      fontWeight: 600,
+      letterSpacing: '.09rem',
+      textTransform: 'uppercase',
+      fontSize: '5rem',
+      marginTop:'5rem'
+    },
+    h4: {
+      fontWeight: 80,
+      letterSpacing: '.09rem',
+      fontSize: '2.5rem',
+      marginTop:'3rem',
+      marginBottom:'4rem',
+      marginLeft:'4rem',
+      marginRight:'4rem'
     }
 
   }
