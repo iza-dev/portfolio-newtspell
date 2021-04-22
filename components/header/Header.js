@@ -23,10 +23,11 @@ const useStyles = makeStyles({
 
 export default function Header (props) {
 
-  const classNameHeader = (props.page != 'home') ? useStylesBase() : useStyles()
+  const classNameHeader = (props.page != 'home') ? useStyles() : useStylesBase()
 
   return (
     <header className={styles.header}>
+      
       <Typography variant='h1' className={classNameHeader.h1}>NewtSpell</Typography>
       <Typography variant='h2' className={classNameHeader.h2}>Environemnt Artist · Houdini specialized</Typography>
     </header>
