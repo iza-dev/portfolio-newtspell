@@ -1,0 +1,39 @@
+
+.bioWrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: greenyellow; */
+    align-items: stretch;
+    width: 770px;
+    margin: auto;
+}
+.citation{
+    /* background-color:gold; */
+    font-size: 2rem;
+    font-weight: bold;
+    width: 35%;
+}
+.biographie{
+    /* background-color: cadetblue; */
+    text-align:justify;
+    line-height: 55px;
+    width: 75%;
+}
+
+.blockquote {
+    margin: 0 0;
+    padding: 0 0;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+.blockquote::before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+.blockquote p {
+    display: inline;
+    line-height: 79px;
+  }
