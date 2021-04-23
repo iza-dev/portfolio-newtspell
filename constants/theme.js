@@ -16,22 +16,26 @@ export default createMuiTheme({
     },
     background: {
       default: GrayLight
-    },
+    }
 
   },
-  
+
   overrides: {
     MuiCssBaseline: {
       '@global': {
-        'body, html':{
+        'body, html': {
           margin: 0,
-          padding: 0,
+          padding: 0
         },
-        '*, *::before, *::after':{
+        '*, *::before, *::after': {
           boxSizing: 'border-box'
+        },
+        main: {
+          width: '85%',
+          margin: 'auto'
         }
-      },
-    },
+      }
+    }
   },
 
   typography: {
@@ -42,15 +46,29 @@ export default createMuiTheme({
     h1: {
       fontWeight: 600,
       letterSpacing: '1rem',
-      textTransform: 'uppercase',
-      fontSize: '10rem'
+      textTransform: 'uppercase'
     },
     h2: {
       fontWeight: 300,
       letterSpacing: '.5rem',
-      textTransform: 'uppercase',
-      fontSize: '3rem'
+      textTransform: 'uppercase'
     },
+    h3: {
+      fontWeight: 600,
+      letterSpacing: '.09rem',
+      textTransform: 'uppercase',
+      fontSize: '3.5rem',
+      marginTop:'10rem'
+    },
+    h4: {
+      fontWeight: 80,
+      letterSpacing: '.09rem',
+      fontSize: '2.5rem',
+      marginTop:'.5rem',
+      marginBottom:'4rem',
+      marginLeft:'4rem',
+      marginRight:'4rem'
+    }
 
   }
 })

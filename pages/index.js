@@ -7,9 +7,9 @@ export default function Home () {
   // travailler sur les states pour lanime du début
   return (
     <div>
-      <Menu/>
-      <main style={{width:'85%', margin:'auto'}}>
-        <Header />
+      <Menu />
+      <main>
+        <Header page='home' />
         <Works />
         <Footer />
       </main>

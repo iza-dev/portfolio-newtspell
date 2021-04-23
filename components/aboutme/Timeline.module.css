@@ -1,0 +1,108 @@
+.section {
+    padding: 50px 0;
+}
+  
+.timeline {
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+   
+  .timeline ol {
+    font-size: 0;
+    width: 85vw;
+    padding: 250px 0;
+  }
+   
+  .timeline ol li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    height: 3px;
+    background: #fff;
+  }
+   
+  .timeline ol li{
+    width: 16%;
+  }
+   
+  .timeline ol li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #F45B69;
+  }
+  .timeline ol li:last-child::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    background: #F45B69;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  }
+  
+  .timeline ol li div {
+    position: absolute;
+    left: 8px;
+    padding: 15px;
+    font-size: 1rem;
+    white-space: normal;
+    color: black;
+    background: white;
+  }
+   
+  .timeline ol li div::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+
+  /* les div du dessus */
+  .timeline ol li:nth-child(odd) div {
+    top: -16px;
+    transform: translateY(-100%);
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+  }
+  .timeline ol li:nth-child(odd) div::before {
+    top: 100%;
+    border-width: 8px 8px 0 0;
+    border-color: white transparent transparent transparent;
+  }
+  
+   /* les div du dessous */
+  .timeline ol li:nth-child(even) div {
+    top: calc(100% + 16px);
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 15%;
+  }
+  .timeline ol li:nth-child(even) div::before {
+    top: -8px;
+    border-width: 8px 0 0 8px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .timeline time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const StyledMenuToggled = styled.nav`
   display: flex;
@@ -31,4 +31,4 @@ export const StyledMenuToggled = styled.nav`
       color: green;
     }
   }
-`;
+`

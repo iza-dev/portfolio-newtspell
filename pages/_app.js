@@ -26,7 +26,7 @@ export default function App (props) {
         <meta charSet='utf-8' />
         <title>NewtSpell · Portfolio </title>
         <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no' />
-        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.13.1/css/all.css'/>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.13.1/css/all.css' />
       </Head>
       <ThemeProvider theme={ResponsiveFontTheme}>
         <CssBaseline />

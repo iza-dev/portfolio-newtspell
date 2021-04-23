@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const StyledBurger = styled.button`
   position: absolute;
@@ -29,4 +29,4 @@ export const StyledBurger = styled.button`
     position: relative;
     transform-origin: 1px;
   }
-`;
+`
