@@ -32,7 +32,11 @@ export default createMuiTheme({
         },
         main: {
           width: '85%',
-          margin: 'auto'
+          margin: 'auto',
+          display: 'flex',
+          flexGrow: 1,
+          flexShrink: 0,
+          flexDirection: 'column'
         }
       }
     }

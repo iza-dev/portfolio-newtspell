@@ -13,7 +13,7 @@ export const StyledMenuToggled = styled.nav`
   left: 0;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   transition: all 1.5s ease;
-  
+  z-index: 2;
   
   
   a {
